@@ -1,0 +1,6 @@
+framework module ALEither {
+  umbrella header "ALEither-umbrella.h"
+
+  export *
+  module * { export * }
+}

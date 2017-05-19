@@ -1,0 +1,6 @@
+framework module AHObjectMapper {
+  umbrella header "AHObjectMapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

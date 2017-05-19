@@ -1,0 +1,19 @@
+PODS:
+  - AHObjectMapper (0.1.0):
+    - ALEither
+  - ALEither (0.1.4)
+
+DEPENDENCIES:
+  - AHObjectMapper (from `../`)
+
+EXTERNAL SOURCES:
+  AHObjectMapper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AHObjectMapper: 4f9522ce0e95d3c2f2d881043cc901db54fe2ddd
+  ALEither: 790e8f1dda897bfcb56e547e5db86c4eb25da87b
+
+PODFILE CHECKSUM: c2b85b7f4578b7e85f2c84bc85bced28bda83fdf
+
+COCOAPODS: 1.2.1

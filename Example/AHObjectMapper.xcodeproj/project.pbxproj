@@ -12,8 +12,15 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7A528CF9EE05A76D5609E1EF /* Pods_AHObjectMapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */; };
+		8923D4DD1ECC8E2700C50C13 /* MapBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */; };
+		8935D6CB1ED36CED00C5D197 /* MockStructContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */; };
+		894413501ECB34D000A4D54F /* DecodingOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */; };
+		894413531ECB3D1900A4D54F /* IJSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */; };
+		89B3460C1ED4925F005CDBA2 /* IJSONEncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */; };
+		89FA40381ECF4AEB0005C6E4 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */; };
+		89FA403C1ECF640F0005C6E4 /* AHJSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */; };
+		89FA403F1ECF9BC40005C6E4 /* OperatorMockStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */; };
 		D44C6B176D5D919BFC9EA3BD /* Pods_AHObjectMapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08F4E972F36D3137EEBE3527 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0FDFF8CAD2AA2610D8AA8697 /* AHObjectMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHObjectMapper.podspec; path = ../AHObjectMapper.podspec; sourceTree = "<group>"; };
+		08F4E972F36D3137EEBE3527 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0FDFF8CAD2AA2610D8AA8697 /* AHObjectMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHObjectMapper.podspec; path = ../AHObjectMapper.podspec; sourceTree = "<group>"; };
 		1263C08B398CAE88AC8E62D7 /* Pods-AHObjectMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29EB2CA66235ACBAA883A148 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		29EB2CA66235ACBAA883A148 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AHObjectMapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHObjectMapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +50,15 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AHObjectMapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHObjectMapper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		65BBAC6E1EE727815F3D6CA6 /* Pods-AHObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxTests.swift; sourceTree = "<group>"; };
+		8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingOperatorTests.swift; sourceTree = "<group>"; };
+		894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJSONDecodableTests.swift; sourceTree = "<group>"; };
+		89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJSONEncodableTests.swift; sourceTree = "<group>"; };
+		89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHJSONDecoderTests.swift; sourceTree = "<group>"; };
+		89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorMockStruct.swift; sourceTree = "<group>"; };
+		89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockStructContext.swift; sourceTree = "<group>"; };
 		9F6858AD8007461C13010835 /* Pods-AHObjectMapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A2D6B7A0922AC07CB21B7E /* Pods-AHObjectMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +129,15 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */,
+				894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */,
+				8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */,
+				89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */,
+				89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */,
+				89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */,
+				89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */,
+				89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -370,7 +391,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				89FA403C1ECF640F0005C6E4 /* AHJSONDecoderTests.swift in Sources */,
+				8935D6CB1ED36CED00C5D197 /* MockStructContext.swift in Sources */,
+				89FA40381ECF4AEB0005C6E4 /* StringExtensionTests.swift in Sources */,
+				8923D4DD1ECC8E2700C50C13 /* MapBoxTests.swift in Sources */,
+				894413501ECB34D000A4D54F /* DecodingOperatorTests.swift in Sources */,
+				89FA403F1ECF9BC40005C6E4 /* OperatorMockStruct.swift in Sources */,
+				894413531ECB3D1900A4D54F /* IJSONDecodableTests.swift in Sources */,
+				89B3460C1ED4925F005CDBA2 /* IJSONEncodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHObjectMapper_Example.app/AHObjectMapper_Example";
 			};
 			name = Debug;
 		};
@@ -552,6 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHObjectMapper_Example.app/AHObjectMapper_Example";
 			};
 			name = Release;
 		};
