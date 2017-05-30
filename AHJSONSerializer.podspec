@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AHJSONSerializer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AHJSONSerializer.'
+  s.summary          = 'AHJSONSerializer helps parse json to Object and visa versa'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/AlexHmelevskiAG/AHJSONSerializer'
+  s.homepage         = 'https://github.com/AlexHmelevski/AHJSONSerializer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alex Hmelevski' => 'alexei.hmelevski@gmail.com' }
