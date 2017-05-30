@@ -30,6 +30,9 @@ struct User: JSONDecodable, JSONEncodable {
         car ~> encoder["Car"]
         cars ~> encoder["Cars"]
     }
+    private func uppercased(str: String) -> String {
+        return str.uppercased()
+    }
 }
 
 struct Car: JSONDecodable {
@@ -47,6 +50,18 @@ struct Car: JSONDecodable {
         carBrand <~ decoder["brand"]
         engine <~ decoder["Engine"]
     }
+}
+
+struct Result<T:JSONDecodable & JSONEncodable>: JSONDecodable,JSONEncodable {
+    private(set) var result: T?
+    
+    init(decoder: AHJSONDecoder) {
+        result <~ decoder["result"]
+    }
+    func encode(with encoder: AHJSONEncoder) {
+        result ~> encoder["result"]
+    }
+    
 }
 
 

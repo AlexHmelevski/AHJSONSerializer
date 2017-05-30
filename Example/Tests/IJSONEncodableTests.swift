@@ -23,4 +23,19 @@ class IJSONEncodableTests: XCTestCase {
         XCTAssertEqual(user.cars[0].engine, .V6)
         XCTAssertEqual(user.carBrand, "Porche")
     }
+    
+    func test_generic_type_encoding() {
+        let resDict = ["result": UserJSON().json]
+
+        let res = Result<UserProfile>(json: resDict).json
+        
+        let user = Result<UserProfile>(json: res).result!
+        XCTAssertEqual(user.firstName, "Alex")
+        XCTAssertEqual(user.lastName, "Alex's last name")
+        
+        XCTAssertEqual(user.cars[0].brand, "Porche")
+        XCTAssertEqual(user.cars[1].name, "911")
+        XCTAssertEqual(user.cars[0].engine, .V6)
+        XCTAssertEqual(user.carBrand, "Porche")
+    }
 }

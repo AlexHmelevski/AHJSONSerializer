@@ -10,6 +10,7 @@ import XCTest
 @testable import AHJSONSerializer
 
 
+
 class IMappableTests: XCTestCase {
     
     func test_mappable() {
@@ -36,6 +37,19 @@ class IMappableTests: XCTestCase {
         
         XCTAssertEqual(user.car?.carBrand, "Porche")
         XCTAssertEqual(user.car?.carName, "911")
+    }
+    
+    func test_result_struct_test() {
+        let dict = ["result": UserJSON().json]
+        let r = Result<User>(json: dict)
+        
+        
+        XCTAssertEqual(r.result?.firstName, "Alex")
+        XCTAssertEqual(r.result?.lastName, "Alex's last name")
+        
+        
+        XCTAssertEqual(r.result?.car?.carBrand, "Porche")
+        XCTAssertEqual(r.result?.car?.carName, "911")
     }
     
 }
