@@ -1,11 +1,11 @@
-# AHObjectMapper
+# AHJSONSerializer
 
-[![CI Status](http://img.shields.io/travis/AlexHmelevskiAG/AHObjectMapper.svg?style=flat)](https://travis-ci.org/AlexHmelevskiAG/AHObjectMapper)
-[![Version](https://img.shields.io/cocoapods/v/AHObjectMapper.svg?style=flat)](http://cocoapods.org/pods/AHObjectMapper)
-[![License](https://img.shields.io/cocoapods/l/AHObjectMapper.svg?style=flat)](http://cocoapods.org/pods/AHObjectMapper)
-[![Platform](https://img.shields.io/cocoapods/p/AHObjectMapper.svg?style=flat)](http://cocoapods.org/pods/AHObjectMapper)
+[![CI Status](http://img.shields.io/travis/AlexHmelevskiAG/AHJSONSerializer.svg?style=flat)](https://travis-ci.org/AlexHmelevski/AHJSONSerializer)
+[![Version](https://img.shields.io/cocoapods/v/AHJSONSerializer.svg?style=flat)](http://cocoapods.org/pods/AHJSONSerializer)
+[![License](https://img.shields.io/cocoapods/l/AHJSONSerializer.svg?style=flat)](http://cocoapods.org/pods/AHJSONSerializer)
+[![Platform](https://img.shields.io/cocoapods/p/AHJSONSerializer.svg?style=flat)](http://cocoapods.org/pods/AHJSONSerializer)
 
-AHObjectMapper is a framework written in Swift that makes it easy for you to convert your model objects (classes and structs) to and from JSON. 
+AHJSONSerializer is a framework written in Swift that makes it easy for you to convert your model objects (classes and structs) to and from JSON. 
 
 - [Features](#features)
 - [The Basics](#the-basics)
@@ -35,7 +35,7 @@ public protocol JSONEncodable {
     func encode(with encoder: AHJSONEncoder)
 }
 ```
-AHObjectMapper uses the ```<-``` operator to define how each member variable maps to and from JSON.
+AHJSONSerializer uses the ```<~``` and ``~>``` syntaxic sugar operators to define how each member variable maps to and from JSON.
 
 ```swift
 class User: JSONDecodable,JSONEncodable {
@@ -84,7 +84,7 @@ struct Temperature: JSONDecodable {
 }
 ```
 
-Once your class implements `JSONDecodable`, ObjectMapper allows you to easily convert to and from JSON. 
+Once your class implements `JSONDecodable`, AHJSONSerializer allows you to easily convert to and from JSON. 
 
 Convert a JSON string to a model object:
 ```swift
@@ -95,7 +95,7 @@ Convert a model object to a JSON dictionary:
 let json = user.json
 ```
 
-AHObjectMapper can map classes composed of the following types:
+AHJSONSerializer can map classes composed of the following types:
 - `Int`
 - `Bool`
 - `Double`
@@ -118,8 +118,13 @@ AHObjectMapper can map classes composed of the following types:
 #### ` init(decoder: AHJSONDecoder)` 
 This function is where all mapping definitions should go. When parsing JSON, this function is executed during object creation. When generating JSON, it is the only function that is called on the object.
 
+## ```JSONEncodable``` Protocol
+
+#### ` init(decoder: AHJSONEncoder)` 
+This function is where all encoding  definitions should go. The function will be used when `Object.json` will be called 
+
 # Easy Mapping of Nested Objects
-HObjectMapper supports dot notation within keys for easy mapping of nested objects. Given the following JSON String:
+AHJSONSerializer supports dot notation within keys for easy mapping of nested objects. Given the following JSON String:
 ```json
 "distance" : {
      "text" : "102 ft",
@@ -134,12 +139,32 @@ func init(decoder: AHJSONDecoder) {
 ```
 
 # Custom Transforms
+AHJSONSerializer supports ``map`` function so you can do crazy stuff like:
+```swift
+struct Car: JSONDecodable, JSONEncodable {
+   let model: String 
+   init(decoder: AHJSONDecoder) {
+      model = decoder["model"].map(transform: transformToInt)
+                              .map(transform: increase)
+                              .map(transform: transformToString)
+                              .value() ?? ""
+   }
+   
+   func encode(with encoder: AHJSONEncoder) {
+	  model ~> encoder["firstName"].map{uppercased}
+   }
+   private func uppercased(str: String) -> String {
+      return str.uppercased()
+   }
+}
 
+```
+*map function should be strong typed (no generics)
 
 
 # Subclasses
 
-Classes that implement the ```Mappable``` protocol can easily be subclassed. When subclassing mappable classes, follow the structure below:
+Classes that implement the ```JSONDecodable``` and ```JSONEncodable``` protocols can easily be subclassed. When subclassing mappable classes, follow the structure below:
 
 ```swift
 class Base: JSONDecodable {
@@ -155,7 +180,7 @@ class Subclass: Base {
 
 	override init(decoder: AHJSONDecoder) {
 	    super.init(decoder)
-		sub <- map["sub"]
+		sub <~ map["sub"]
 	}
 }
 ```
@@ -164,21 +189,16 @@ Make sure your subclass implemenation calls the right initializers and mapping f
 
 # Generic Objects
 
-ObjectMapper can handle classes with generic types as long as the generic type also conforms to `Mappable`. See the following example:
+AHJSONSerializer can handle classes with generic types as long as the generic type also conforms to `JSONDecodable`. See the following example:
 ```swift
-class Result<T: Mappable>: Mappable {
+class Result<T: JSONDecodable>: JSONDecodable {
     var result: T?
 
-    required init?(map: Map){
-
-    }
-
-    func mapping(map: Map) {
-        result <- map["result"]
-    }
+  required init(decoder: AHJSONDecoder) {
+        result <~ map["result"]
+  }
 }
 
-let result = Mapper<Result<User>>().map(JSON)
 ```
 
 
@@ -193,18 +213,18 @@ Before submitting any pull request, please ensure you have run the included test
 
 # Installation
 ### Cocoapods
-AHObjectMapper is available through [CocoaPods](http://cocoapods.org). To install
+AHJSONSerializer is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AHObjectMapper"
+pod "AHJSONSerializer"
 ```
 
 ### Swift Package Manager
-To add ObjectMapper to a [Swift Package Manager](https://swift.org/package-manager/) based project, add:
+To add AHJSONSerializer to a [Swift Package Manager](https://swift.org/package-manager/) based project, add:
 
 ```swift
-.Package(url: "https://github.com/Hearst-DD/ObjectMapper.git", majorVersion: 2, minor: 2),
+.Package(url: "https://github.com/Hearst-DD/AHJSONSerializer.git", majorVersion: 2, minor: 2),
 ```
 to your `Package.swift` files `dependencies` array.
 
@@ -212,8 +232,9 @@ to your `Package.swift` files `dependencies` array.
 
 ## Author
 
-AlexHmelevskiAG, alexei.hmelevski@gmail.com
+Alexei Hmelevski, alexei.hmelevski@gmail.com
 
 ## License
 
-AHObjectMapper is available under the MIT license. See the LICENSE file for more info.
+AHJSONSerializer is available under the MIT license. See the LICENSE file for more info.
+
