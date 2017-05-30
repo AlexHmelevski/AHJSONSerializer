@@ -224,7 +224,7 @@ pod "AHJSONSerializer"
 To add AHJSONSerializer to a [Swift Package Manager](https://swift.org/package-manager/) based project, add:
 
 ```swift
-.Package(url: "https://github.com/Hearst-DD/AHJSONSerializer.git", majorVersion: 2, minor: 2),
+.Package(url: "hhttps://github.com/AlexHmelevski/AHJSONSerializer.git", majorVersion: 2, minor: 2),
 ```
 to your `Package.swift` files `dependencies` array.
 
