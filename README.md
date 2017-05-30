@@ -203,7 +203,7 @@ class Result<T: JSONDecodable>: JSONDecodable {
 
 
 # To Do
-
+- reduce number of methods for value casting
 
 # Contributing
 
