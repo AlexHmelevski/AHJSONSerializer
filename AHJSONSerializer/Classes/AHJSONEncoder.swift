@@ -87,7 +87,7 @@ public struct AHJSONEncoderContext {
         value.do(work: { self.scope(self.currentValue?($0) ?? $0) })
     }
     
-    func map<T, U>(transform: @escaping (T) -> U) -> AHJSONEncoderContext {
+    public func map<T, U>(transform: @escaping (T) -> U) -> AHJSONEncoderContext {
         return AHJSONEncoderContext(scope: self.scope, currentValue: { (obj) -> Any in
             return (self.value(from: obj).map(transform) ?? obj) as Any
         })
