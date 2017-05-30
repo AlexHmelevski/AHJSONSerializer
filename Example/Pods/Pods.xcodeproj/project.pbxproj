@@ -164,8 +164,7 @@
 			children = (
 				87E957095C3B2F1B760D1878B88B2F13 /* Classes */,
 			);
-			name = AHJSONSerializer;
-			path = AHObjectMapper;
+			path = AHJSONSerializer;
 			sourceTree = "<group>";
 		};
 		35CE169CBA787EBE1C9CBB407C8EA3DF /* Support Files */ = {
