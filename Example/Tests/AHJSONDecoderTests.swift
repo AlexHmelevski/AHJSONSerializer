@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AHObjectMapper
+@testable import AHJSONSerializer
 
 class AHJSONDecoderTests: XCTestCase {
     let json: [String : Any] = ["Dict" : [ "String" : "Test",

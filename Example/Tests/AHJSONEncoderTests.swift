@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AHObjectMapper
+@testable import AHJSONSerializer
 
 class AHJSONEncoderTests: XCTestCase {
     

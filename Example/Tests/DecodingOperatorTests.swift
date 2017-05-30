@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AHObjectMapper
+@testable import AHJSONSerializer
 
 extension Int {
     var asString: String {

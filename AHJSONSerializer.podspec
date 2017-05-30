@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AHJSONSerializer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AHObjectMapper.'
+  s.summary          = 'A short description of AHJSONSerializer.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/AlexHmelevskiAG/AHObjectMapper'
+  s.homepage         = 'https://github.com/AlexHmelevskiAG/AHJSONSerializer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alex Hmelevski' => 'alexei.hmelevski@gmail.com' }
-  s.source           = { :git => 'https://github.com/AlexHmelevskiAG/AHObjectMapper.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AlexHmelevski/AHJSONSerializer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AHObjectMapper/Classes/**/*'
+  s.source_files = 'AHJSONSerializer/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AHObjectMapper' => ['AHObjectMapper/Assets/*.png']

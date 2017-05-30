@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'AHObjectMapper_Example' do
-  pod 'AHObjectMapper', :path => '../'
+target 'AHJSONSerializer_Example' do
+  pod 'AHJSONSerializer', :path => '../'
 
-  target 'AHObjectMapper_Tests' do
+  target 'AHJSONSerializer_Tests' do
     inherit! :search_paths
   end
 end

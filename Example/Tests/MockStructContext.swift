@@ -8,7 +8,7 @@
 
 import Foundation
 
-@testable import AHObjectMapper
+@testable import AHJSONSerializer
 
 struct DataBase: JSONDecodable {
     let dictionary: [String: UserProfile]

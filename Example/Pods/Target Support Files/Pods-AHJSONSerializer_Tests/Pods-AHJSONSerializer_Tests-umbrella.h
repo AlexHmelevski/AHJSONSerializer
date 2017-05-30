@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double AHObjectMapperVersionNumber;
-FOUNDATION_EXPORT const unsigned char AHObjectMapperVersionString[];
+FOUNDATION_EXPORT double Pods_AHJSONSerializer_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AHJSONSerializer_TestsVersionString[];
 

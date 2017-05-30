@@ -1,0 +1,6 @@
+framework module Pods_AHJSONSerializer_Tests {
+  umbrella header "Pods-AHJSONSerializer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

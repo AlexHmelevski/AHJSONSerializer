@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import AHObjectMapper
+@testable import AHJSONSerializer
 
 struct User: JSONDecodable, JSONEncodable {
     private(set) var firstName: String = ""

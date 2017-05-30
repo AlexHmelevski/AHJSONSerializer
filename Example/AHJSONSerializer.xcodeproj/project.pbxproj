@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357998902B75AC45CDF03A49 /* Pods_AHJSONSerializer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC188B7D757E62F7C9DFC496 /* Pods_AHJSONSerializer_Example.framework */; };
+		42ED13495D8D8693306D26F3 /* Pods_AHJSONSerializer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E4B7D5C3F2C2DBD7887563 /* Pods_AHJSONSerializer_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		7A528CF9EE05A76D5609E1EF /* Pods_AHObjectMapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */; };
 		891F926D1ED7BB5300CC08E3 /* JSONMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F926B1ED7BABE00CC08E3 /* JSONMocks.swift */; };
 		892250601ED751DE00122F63 /* AHJSONEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922505F1ED751DE00122F63 /* AHJSONEncoderTests.swift */; };
 		8923D4DD1ECC8E2700C50C13 /* MapBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */; };
@@ -20,10 +21,10 @@
 		894413501ECB34D000A4D54F /* DecodingOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */; };
 		894413531ECB3D1900A4D54F /* IJSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */; };
 		89B3460C1ED4925F005CDBA2 /* IJSONEncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */; };
+		89DE24FF1EDD01BA003AB1AD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DE24FE1EDD01BA003AB1AD /* Default-568h@2x.png */; };
 		89FA40381ECF4AEB0005C6E4 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */; };
 		89FA403C1ECF640F0005C6E4 /* AHJSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */; };
 		89FA403F1ECF9BC40005C6E4 /* OperatorMockStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */; };
-		D44C6B176D5D919BFC9EA3BD /* Pods_AHObjectMapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,11 @@
 /* Begin PBXFileReference section */
 		08F4E972F36D3137EEBE3527 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		0FDFF8CAD2AA2610D8AA8697 /* AHJSONSerializer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHJSONSerializer.podspec; path = ../AHJSONSerializer.podspec; sourceTree = "<group>"; };
-		1263C08B398CAE88AC8E62D7 /* Pods-AHObjectMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EB2CA66235ACBAA883A148 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		46E4B7D5C3F2C2DBD7887563 /* Pods_AHJSONSerializer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHJSONSerializer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4861A6B2D48A8C8F40D64708 /* Pods-AHJSONSerializer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJSONSerializer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHJSONSerializer_Example/Pods-AHJSONSerializer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AHJSONSerializer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHJSONSerializer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,19 +54,21 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AHJSONSerializer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHJSONSerializer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65BBAC6E1EE727815F3D6CA6 /* Pods-AHObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		891F926B1ED7BABE00CC08E3 /* JSONMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMocks.swift; sourceTree = "<group>"; };
 		8922505F1ED751DE00122F63 /* AHJSONEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHJSONEncoderTests.swift; sourceTree = "<group>"; };
 		8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxTests.swift; sourceTree = "<group>"; };
 		8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingOperatorTests.swift; sourceTree = "<group>"; };
 		894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJSONDecodableTests.swift; sourceTree = "<group>"; };
 		89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJSONEncodableTests.swift; sourceTree = "<group>"; };
+		89DE24FE1EDD01BA003AB1AD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHJSONDecoderTests.swift; sourceTree = "<group>"; };
 		89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorMockStruct.swift; sourceTree = "<group>"; };
 		89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockStructContext.swift; sourceTree = "<group>"; };
-		9F6858AD8007461C13010835 /* Pods-AHObjectMapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2A2D6B7A0922AC07CB21B7E /* Pods-AHObjectMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B36552B8BBFAFACE42CA1DD6 /* Pods-AHJSONSerializer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJSONSerializer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHJSONSerializer_Example/Pods-AHJSONSerializer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BC091546093AF86890FD369F /* Pods-AHJSONSerializer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJSONSerializer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHJSONSerializer_Tests/Pods-AHJSONSerializer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D282122D8B791A62E8111949 /* Pods-AHJSONSerializer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJSONSerializer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHJSONSerializer_Tests/Pods-AHJSONSerializer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC188B7D757E62F7C9DFC496 /* Pods_AHJSONSerializer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHJSONSerializer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A528CF9EE05A76D5609E1EF /* Pods_AHObjectMapper_Example.framework in Frameworks */,
+				357998902B75AC45CDF03A49 /* Pods_AHJSONSerializer_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44C6B176D5D919BFC9EA3BD /* Pods_AHObjectMapper_Tests.framework in Frameworks */,
+				42ED13495D8D8693306D26F3 /* Pods_AHJSONSerializer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +94,9 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				89DE24FE1EDD01BA003AB1AD /* Default-568h@2x.png */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for AHObjectMapper */,
+				607FACD21AFB9204008FA782 /* Example for AHJSONSerializer */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				EA09939438E3D6AEE53DDD3E /* Pods */,
@@ -108,7 +113,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for AHObjectMapper */ = {
+		607FACD21AFB9204008FA782 /* Example for AHJSONSerializer */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -118,8 +123,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for AHObjectMapper";
-			path = AHObjectMapper;
+			name = "Example for AHJSONSerializer";
+			path = AHJSONSerializer;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -171,6 +176,8 @@
 			children = (
 				195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */,
 				174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */,
+				FC188B7D757E62F7C9DFC496 /* Pods_AHJSONSerializer_Example.framework */,
+				46E4B7D5C3F2C2DBD7887563 /* Pods_AHJSONSerializer_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,10 +185,10 @@
 		EA09939438E3D6AEE53DDD3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2A2D6B7A0922AC07CB21B7E /* Pods-AHObjectMapper_Example.debug.xcconfig */,
-				1263C08B398CAE88AC8E62D7 /* Pods-AHObjectMapper_Example.release.xcconfig */,
-				9F6858AD8007461C13010835 /* Pods-AHObjectMapper_Tests.debug.xcconfig */,
-				65BBAC6E1EE727815F3D6CA6 /* Pods-AHObjectMapper_Tests.release.xcconfig */,
+				B36552B8BBFAFACE42CA1DD6 /* Pods-AHJSONSerializer_Example.debug.xcconfig */,
+				4861A6B2D48A8C8F40D64708 /* Pods-AHJSONSerializer_Example.release.xcconfig */,
+				D282122D8B791A62E8111949 /* Pods-AHJSONSerializer_Tests.debug.xcconfig */,
+				BC091546093AF86890FD369F /* Pods-AHJSONSerializer_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				89DE24FF1EDD01BA003AB1AD /* Default-568h@2x.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -318,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJSONSerializer_Tests/Pods-AHJSONSerializer_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		36C992CABF16426AEFF55335 /* [CP] Check Pods Manifest.lock */ = {
@@ -348,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJSONSerializer_Example/Pods-AHJSONSerializer_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AEA83A140350717CCA69BB81 /* [CP] Copy Pods Resources */ = {
@@ -363,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJSONSerializer_Example/Pods-AHJSONSerializer_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6773DA9485DF8A28E1AF244 /* [CP] Embed Pods Frameworks */ = {
@@ -378,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJSONSerializer_Tests/Pods-AHJSONSerializer_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -529,10 +537,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2A2D6B7A0922AC07CB21B7E /* Pods-AHObjectMapper_Example.debug.xcconfig */;
+			baseConfigurationReference = B36552B8BBFAFACE42CA1DD6 /* Pods-AHJSONSerializer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AHObjectMapper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AHJSONSerializer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -543,10 +551,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1263C08B398CAE88AC8E62D7 /* Pods-AHObjectMapper_Example.release.xcconfig */;
+			baseConfigurationReference = 4861A6B2D48A8C8F40D64708 /* Pods-AHJSONSerializer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AHObjectMapper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AHJSONSerializer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -557,18 +565,15 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F6858AD8007461C13010835 /* Pods-AHObjectMapper_Tests.debug.xcconfig */;
+			baseConfigurationReference = D282122D8B791A62E8111949 /* Pods-AHJSONSerializer_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -578,14 +583,11 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BBAC6E1EE727815F3D6CA6 /* Pods-AHObjectMapper_Tests.release.xcconfig */;
+			baseConfigurationReference = BC091546093AF86890FD369F /* Pods-AHJSONSerializer_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

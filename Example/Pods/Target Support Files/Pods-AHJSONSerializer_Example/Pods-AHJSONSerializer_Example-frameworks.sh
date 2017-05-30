@@ -89,11 +89,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AHObjectMapper/AHObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AHJSONSerializer/AHJSONSerializer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ALEither/ALEither.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/AHObjectMapper/AHObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AHJSONSerializer/AHJSONSerializer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ALEither/ALEither.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
