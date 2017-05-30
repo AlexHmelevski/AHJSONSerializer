@@ -84,7 +84,7 @@ struct Temperature: JSONDecodable {
 }
 ```
 
-Once your class implements `JSONDecodable`, AHJSONSerializer allows you to easily convert to and from JSON. 
+Once your class implements `JSONDecodable` and `JSONEncodable`, AHJSONSerializer allows you to easily convert to and from JSON. 
 
 Convert a JSON string to a model object:
 ```swift
