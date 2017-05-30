@@ -16,8 +16,8 @@ public struct AHJSONDecoder {
         context = json
     }
     
-    init(from map: AHJSONDecoder, with value: Any?) {
-        context = map.context
+    init(from decoder: AHJSONDecoder, with value: Any?) {
+        context = decoder.context
         self.box = MapBox(obj: value)
     }
     
@@ -36,17 +36,38 @@ public struct AHJSONDecoder {
         return box?.value()
     }
     
-    public func value<T: IJSONDecodable>() -> T? {
+    public func map<T,U>(transform: (T)->U) -> AHJSONDecoder {
+        if let val: T = box?.value() {
+            return AHJSONDecoder(from: self, with: transform(val))
+        } else {
+            return self
+        }
+    }
+}
+
+// MARK: JSONDecodable methods
+
+extension AHJSONDecoder {
+    public func value<T: JSONDecodable>() -> T? {
         return box?.value()
     }
     
-    public func value<T: IJSONDecodable>() -> [T]? {
+    public func value<T: JSONDecodable>() -> [T]? {
         return box?.value()
     }
     
-    public func value<T: IJSONDecodable>() -> [String: T]? {
+    public func value<T: JSONDecodable>() -> [String: T]? {
         return box?.value()
     }
+    
+    public func value<T: JSONDecodable>() -> [String: [T]]? {
+        return box?.value()
+    }
+}
+
+
+// MARK: RawRepresentable methods
+extension AHJSONDecoder {
     
     public func value<T: RawRepresentable>() -> T? {
         return box?.value()
@@ -60,6 +81,13 @@ public struct AHJSONDecoder {
         return box?.value()
     }
     
+    public func value<T: RawRepresentable>() -> [String: [T]]? {
+        return box?.value()
+    }
+}
+
+extension AHJSONDecoder {
+    
     public func value<T: StringConvertable>() -> T? {
         return box?.value()
     }
@@ -71,4 +99,9 @@ public struct AHJSONDecoder {
     public func value<T: StringConvertable>() -> [String: T]? {
         return box?.value()
     }
+    
+    public func value<T: StringConvertable>() -> [String: [T]]? {
+        return box?.value()
+    }
+    
 }

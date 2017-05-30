@@ -10,12 +10,8 @@ import XCTest
 
 class IJSONEncodableTests: XCTestCase {
     
-    
     func test_encoding() {
-        
-        let carJson: [String: Any] = ["name": "911", "brand" : "Porche", "Engine": "V6"]
-        let json: [String: Any] = ["firstName" : "Alex", "lastName": "Alex's last name","Cars": [carJson,carJson],"Car": carJson]
-        let user1 = UserProfile(json: json)
+        let user1 = UserProfile(json: UserJSON().json)
         let jsonUser  = user1.json
         
         let user = UserProfile(json:jsonUser)
@@ -26,6 +22,5 @@ class IJSONEncodableTests: XCTestCase {
         XCTAssertEqual(user.cars[1].name, "911")
         XCTAssertEqual(user.cars[0].engine, .V6)
         XCTAssertEqual(user.carBrand, "Porche")
-        
     }
 }

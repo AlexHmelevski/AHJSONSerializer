@@ -18,6 +18,7 @@ struct MapBox{
     }
     
     func value<T>() -> T? {
+    
         return currentValue as? T
     }
     
@@ -44,37 +45,41 @@ extension MapBox {
     }
 }
 
-//===== IJSONDecodable types ====
+//===== JSONDecodable types ====
 
 extension MapBox {
     
-    func value<T: IJSONDecodable>() -> T? {
+    fileprivate func transformTo<T: JSONDecodable>(from box: CastBox<[String : Any]>) -> T? {
+        return box.casted.map(transform)
+    }
+    
+    func value<T: JSONDecodable>() -> T? {
         return (currentValue as? [String : Any]).flatMap(transform)
     }
     
-    func value<T: IJSONDecodable>() -> [T]? {
+    func value<T: JSONDecodable>() -> [T]? {
         return (currentValue as? [[String : Any]]).flatMap(transform)
     }
     
-    func value<T: IJSONDecodable>() -> [String: T]? {
+    func value<T: JSONDecodable>() -> [String: T]? {
        return (currentValue as? [String : Any]).flatMap(transform)
                                                ?? currentValue as? [String : T]
     }
     
-    private func transform<T: IJSONDecodable>(dict: [String: Any]) -> T {
+    private func transform<T: JSONDecodable>(dict: [String: Any]) -> T {
         return T.init(json: dict)
     }
     
-    private func transform<T: IJSONDecodable>(array: [[String: Any]]) -> [T] {
+    private func transform<T: JSONDecodable>(array: [[String: Any]]) -> [T] {
         return array.flatMap(transform)
     }
     
-    private func transform<T: IJSONDecodable>(dict: [String: Any]) -> [String: T] {
+    private func transform<T: JSONDecodable>(dict: [String: Any]) -> [String: T] {
         return dict.reduce([:], reduce)
     }
     
     
-    private func reduce<T: IJSONDecodable>(partial: [String: T], element: (key: String, value: Any)) -> [String : T] {
+    private func reduce<T: JSONDecodable>(partial: [String: T], element: (key: String, value: Any)) -> [String : T] {
         var newPartial = partial
         
         let newElement = (element.value as? [String: Any]).map(T.init) ?? element.value as? T

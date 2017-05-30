@@ -19,6 +19,9 @@
 		89E173CE1ED4795800B2A05E /* AHEncodingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E173CD1ED4795800B2A05E /* AHEncodingOperators.swift */; };
 		89FA40341ECF4AB50005C6E4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40331ECF4AB50005C6E4 /* StringExtension.swift */; };
 		89FA403A1ECF633D0005C6E4 /* AHJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40391ECF633D0005C6E4 /* AHJSONDecoder.swift */; };
+		89FFBDC91EDCF39B009DB786 /* CastBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FFBDC81EDCF39B009DB786 /* CastBox.swift */; };
+		89FFBDCB1EDCFC23009DB786 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FFBDCA1EDCFC23009DB786 /* JSONDecodable.swift */; };
+		89FFBDCD1EDCFC90009DB786 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FFBDCC1EDCFC90009DB786 /* JSONEncodable.swift */; };
 		907A3A3A2FCF2BBE3A6E782A28ECCFCA /* ALEither.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2629BA33E5A774BC0CD3327B60789DB7 /* ALEither.swift */; };
 		9D5855CD76AA543E470BE31C6A809D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3162BE7C3C25647C1B056757E85C7 /* Foundation.framework */; };
 		A9614D712967F7A7DFEE9196F69F28EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3162BE7C3C25647C1B056757E85C7 /* Foundation.framework */; };
@@ -27,7 +30,7 @@
 		C8EC0844800463E17D7DF4709B5D4741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3162BE7C3C25647C1B056757E85C7 /* Foundation.framework */; };
 		D42988A548C9D12EED36D22925723015 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567A4E0EBCD6E7CCB99AF1D7469FC3F /* OptionalExt.swift */; };
 		DEE11AD0D6DA5E13A72139F35D459C39 /* Pods-AHObjectMapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 142CFB79B82ABDABF45AA1225F833980 /* Pods-AHObjectMapper_Example-dummy.m */; };
-		E0C650D9ED59A4DA1391CB8B18FF1FFB /* AHObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B51547B78BBB1025C769AA1D9446CF /* AHObjectMapper.swift */; };
+		E0C650D9ED59A4DA1391CB8B18FF1FFB /* AHJSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B51547B78BBB1025C769AA1D9446CF /* AHJSONSerializer.swift */; };
 		EBE843D03E31CBCF0233F418B6A4FEA8 /* AHObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF84626152233511FD28E184E2F9E576 /* AHObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F20EC29301233EC405A8071B242CE52E /* Pods-AHObjectMapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F7A4DE0626199D99C8981BFE0124CD /* Pods-AHObjectMapper_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -78,7 +81,7 @@
 		68F7A4DE0626199D99C8981BFE0124CD /* Pods-AHObjectMapper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHObjectMapper_Tests-dummy.m"; sourceTree = "<group>"; };
 		6B0EF1E65DD482B3AECE892A55F4CA79 /* Pods-AHObjectMapper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHObjectMapper_Example-resources.sh"; sourceTree = "<group>"; };
 		706D1F8D45C87ADAEDCB94B81DC2F2B0 /* ALEither-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALEither-prefix.pch"; sourceTree = "<group>"; };
-		75B51547B78BBB1025C769AA1D9446CF /* AHObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHObjectMapper.swift; sourceTree = "<group>"; };
+		75B51547B78BBB1025C769AA1D9446CF /* AHJSONSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHJSONSerializer.swift; sourceTree = "<group>"; };
 		7E48D7C8B83806B360EE92C69E4C0FC3 /* Pods-AHObjectMapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHObjectMapper_Tests.modulemap"; sourceTree = "<group>"; };
 		8169F073290317AC2ECCC263CDBC6BFC /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8906B60B1ED5CEF000E9704C /* StringConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertable.swift; sourceTree = "<group>"; };
@@ -88,6 +91,9 @@
 		89E173CD1ED4795800B2A05E /* AHEncodingOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHEncodingOperators.swift; sourceTree = "<group>"; };
 		89FA40331ECF4AB50005C6E4 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		89FA40391ECF633D0005C6E4 /* AHJSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHJSONDecoder.swift; sourceTree = "<group>"; };
+		89FFBDC81EDCF39B009DB786 /* CastBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastBox.swift; sourceTree = "<group>"; };
+		89FFBDCA1EDCFC23009DB786 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		89FFBDCC1EDCFC90009DB786 /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodable.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99E9D16696F513499E8DAB38B2741750 /* Pods-AHObjectMapper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHObjectMapper_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A0BE8546EC07BA150D8967775308B220 /* ALEither-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALEither-umbrella.h"; sourceTree = "<group>"; };
@@ -199,7 +205,7 @@
 		87E957095C3B2F1B760D1878B88B2F13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				75B51547B78BBB1025C769AA1D9446CF /* AHObjectMapper.swift */,
+				75B51547B78BBB1025C769AA1D9446CF /* AHJSONSerializer.swift */,
 				894413541ECB3EEE00A4D54F /* AHDecodingOperators.swift */,
 				89E173CD1ED4795800B2A05E /* AHEncodingOperators.swift */,
 				89FA40391ECF633D0005C6E4 /* AHJSONDecoder.swift */,
@@ -207,6 +213,9 @@
 				8923D4DA1ECB8B9900C50C13 /* MapBox.swift */,
 				89FA40331ECF4AB50005C6E4 /* StringExtension.swift */,
 				8906B60B1ED5CEF000E9704C /* StringConvertable.swift */,
+				89FFBDC81EDCF39B009DB786 /* CastBox.swift */,
+				89FFBDCA1EDCFC23009DB786 /* JSONDecodable.swift */,
+				89FFBDCC1EDCFC90009DB786 /* JSONEncodable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -480,10 +489,13 @@
 			files = (
 				70BE90EC0E1251C08592BAB9FC238A78 /* AHObjectMapper-dummy.m in Sources */,
 				8906B60C1ED5CEF000E9704C /* StringConvertable.swift in Sources */,
-				E0C650D9ED59A4DA1391CB8B18FF1FFB /* AHObjectMapper.swift in Sources */,
+				E0C650D9ED59A4DA1391CB8B18FF1FFB /* AHJSONSerializer.swift in Sources */,
 				89FA40341ECF4AB50005C6E4 /* StringExtension.swift in Sources */,
+				89FFBDCB1EDCFC23009DB786 /* JSONDecodable.swift in Sources */,
+				89FFBDCD1EDCFC90009DB786 /* JSONEncodable.swift in Sources */,
 				89E173CE1ED4795800B2A05E /* AHEncodingOperators.swift in Sources */,
 				89FA403A1ECF633D0005C6E4 /* AHJSONDecoder.swift in Sources */,
+				89FFBDC91EDCF39B009DB786 /* CastBox.swift in Sources */,
 				894413551ECB3EEE00A4D54F /* AHDecodingOperators.swift in Sources */,
 				89E173CC1ED4740200B2A05E /* AHJSONEncoder.swift in Sources */,
 				8923D4DB1ECB8B9900C50C13 /* MapBox.swift in Sources */,

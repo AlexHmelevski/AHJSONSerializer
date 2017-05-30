@@ -9,6 +9,12 @@
 import XCTest
 @testable import AHObjectMapper
 
+extension Int {
+    var asString: String {
+        return String(self)
+    }
+}
+
 class OperatorBasicTypeTests: XCTestCase {
     
     func test_int() {
@@ -477,6 +483,33 @@ class OperatorBasicTypeTests: XCTestCase {
         enumForce <~ map["Enum"]
         XCTAssertEqual(Test.Case1, enumForce)
     }
+    
+    
+    
+    func test_operator_support_map() {
+        
+        let json = ["int": 1]
+        let map = AHJSONDecoder(json: json)
+        var intV: String = ""
+        var intOp: String? = ""
+        var intForce: String! = "'"
+        var intString: String = ""
+        
+        intV <~ map["int"].map(transform: intToString)
+        XCTAssertEqual("1", intV)
+        
+        
+        intOp <~ map["int"].map(transform: intToString)
+        XCTAssertEqual("1", intOp)
+        
+        intForce <~ map["int"].map(transform: intToString)
+        XCTAssertEqual("1", intForce)
+    }
+    
+    private func intToString(num: Int) -> String {
+        return String(num)
+    }
+    
     
 //    func test_Enum_FromString() {
 //        

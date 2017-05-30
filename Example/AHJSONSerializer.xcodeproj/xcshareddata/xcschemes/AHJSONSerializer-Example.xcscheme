@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "AHObjectMapper_Example.app"
-               BlueprintName = "AHObjectMapper_Example"
-               ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+               BuildableName = "AHJSONSerializer_Example.app"
+               BlueprintName = "AHJSONSerializer_Example"
+               ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AHObjectMapper_Tests.xctest"
-               BlueprintName = "AHObjectMapper_Tests"
-               ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+               BuildableName = "AHJSONSerializer_Tests.xctest"
+               BlueprintName = "AHJSONSerializer_Tests"
+               ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AHObjectMapper_Tests.xctest"
-               BlueprintName = "AHObjectMapper_Tests"
-               ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+               BuildableName = "AHJSONSerializer_Tests.xctest"
+               BlueprintName = "AHJSONSerializer_Tests"
+               ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AHObjectMapper_Example.app"
-            BlueprintName = "AHObjectMapper_Example"
-            ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+            BuildableName = "AHJSONSerializer_Example.app"
+            BlueprintName = "AHJSONSerializer_Example"
+            ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AHObjectMapper_Example.app"
-            BlueprintName = "AHObjectMapper_Example"
-            ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+            BuildableName = "AHJSONSerializer_Example.app"
+            BlueprintName = "AHJSONSerializer_Example"
+            ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -110,9 +110,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AHObjectMapper_Example.app"
-            BlueprintName = "AHObjectMapper_Example"
-            ReferencedContainer = "container:AHObjectMapper.xcodeproj">
+            BuildableName = "AHJSONSerializer_Example.app"
+            BlueprintName = "AHJSONSerializer_Example"
+            ReferencedContainer = "container:AHJSONSerializer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -41,4 +41,30 @@ class AHJSONDecoderTests: XCTestCase {
         let bool: Bool = context["Dict.Dict.Bool"].value() ?? false
         XCTAssertEqual(bool, true)
     }
+    
+    
+    
+    func test_map_transforms_value() {
+        
+        let model: String = AHJSONDecoder(json: CarJSON().json)["name"]
+                                     .map(transform: transformToInt)
+                                     .map(transform: increase)
+                                     .map(transform: transformToString)
+                                     .value()!
+        
+        XCTAssertEqual(model, "912")
+        
+    }
+    
+    private func transformToInt(str: String) -> Int {
+        return Int(str) ?? -1
+    }
+    private func increase(num: Int) -> Int {
+        return num + 1
+    }
+    
+    private func transformToString(int: Int) -> String {
+        return String(int)
+    }
+    
 }

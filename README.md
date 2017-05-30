@@ -22,23 +22,23 @@ AHObjectMapper is a framework written in Swift that makes it easy for you to con
 - Nested Objects 
  
 # The Basics
-To support json decoding, a class or struct just needs to implement the ```IJSONDecodable``` protocol:
+To support json decoding, a class or struct just needs to implement the ```JSONDecodable``` protocol:
 ```swift
-public protocol IJSONDecodable {
+public protocol JSONDecodable {
     init(decoder: AHJSONDecoder)
 }
 ```
 
-To support json encoding, a class or a struct need to implement the ```IJSONEncodable``` protocol:
+To support json encoding, a class or a struct need to implement the ```JSONEncodable``` protocol:
 ```swift
-public protocol IJSONEncodable {
+public protocol JSONEncodable {
     func encode(with encoder: AHJSONEncoder)
 }
 ```
 AHObjectMapper uses the ```<-``` operator to define how each member variable maps to and from JSON.
 
 ```swift
-class User: IJSONDecodable,IJSONEncodable {
+class User: JSONDecodable,JSONEncodable {
     var username: String?
     var age: Int?
     var weight: Double!
@@ -72,7 +72,7 @@ class User: IJSONDecodable,IJSONEncodable {
 
 }
 
-struct Temperature: IJSONDecodable {
+struct Temperature: JSONDecodable {
     let celsius: Double
     let fahrenheit: Double?
     
@@ -84,7 +84,7 @@ struct Temperature: IJSONDecodable {
 }
 ```
 
-Once your class implements `IJSONDecodable`, ObjectMapper allows you to easily convert to and from JSON. 
+Once your class implements `JSONDecodable`, ObjectMapper allows you to easily convert to and from JSON. 
 
 Convert a JSON string to a model object:
 ```swift
@@ -104,16 +104,16 @@ AHObjectMapper can map classes composed of the following types:
 - `RawRepresentable` (Enums)
 - `Array<AnyObject>`
 - `Dictionary<String, AnyObject>`
-- `Object<T: IJSONDecodable>`
-- `Array<T: IJSONDecodable>`
-- `Array<Array<T: IJSONDecodable>>`
-- `Set<T: IJSONDecodable>` 
-- `Dictionary<String, T: IJSONDecodable>`
-- `Dictionary<String, Array<T: IJSONDecodable>>`
+- `Object<T: JSONDecodable>`
+- `Array<T: JSONDecodable>`
+- `Array<Array<T: JSONDecodable>>`
+- `Set<T: JSONDecodable>` 
+- `Dictionary<String, T: JSONDecodable>`
+- `Dictionary<String, Array<T: JSONDecodable>>`
 - Optionals of all the above
 - Implicitly Unwrapped Optionals of the above
 
-## ```IJSONDecodable``` Protocol
+## ```JSONDecodable``` Protocol
 
 #### ` init(decoder: AHJSONDecoder)` 
 This function is where all mapping definitions should go. When parsing JSON, this function is executed during object creation. When generating JSON, it is the only function that is called on the object.
@@ -142,7 +142,7 @@ func init(decoder: AHJSONDecoder) {
 Classes that implement the ```Mappable``` protocol can easily be subclassed. When subclassing mappable classes, follow the structure below:
 
 ```swift
-class Base: IJSONDecodable {
+class Base: JSONDecodable {
 	var base: String?
 	
 	required init(decoder: AHJSONDecoder) {

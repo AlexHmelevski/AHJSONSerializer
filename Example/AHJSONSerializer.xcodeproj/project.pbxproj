@@ -13,6 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		7A528CF9EE05A76D5609E1EF /* Pods_AHObjectMapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */; };
+		891F926D1ED7BB5300CC08E3 /* JSONMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F926B1ED7BABE00CC08E3 /* JSONMocks.swift */; };
+		892250601ED751DE00122F63 /* AHJSONEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922505F1ED751DE00122F63 /* AHJSONEncoderTests.swift */; };
 		8923D4DD1ECC8E2700C50C13 /* MapBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */; };
 		8935D6CB1ED36CED00C5D197 /* MockStructContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */; };
 		894413501ECB34D000A4D54F /* DecodingOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */; };
@@ -36,21 +38,23 @@
 
 /* Begin PBXFileReference section */
 		08F4E972F36D3137EEBE3527 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0FDFF8CAD2AA2610D8AA8697 /* AHObjectMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHObjectMapper.podspec; path = ../AHObjectMapper.podspec; sourceTree = "<group>"; };
+		0FDFF8CAD2AA2610D8AA8697 /* AHJSONSerializer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHJSONSerializer.podspec; path = ../AHJSONSerializer.podspec; sourceTree = "<group>"; };
 		1263C08B398CAE88AC8E62D7 /* Pods-AHObjectMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Example/Pods-AHObjectMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		174EB4923307B03159E40E32 /* Pods_AHObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		195B85870C13179DF8F6E7E8 /* Pods_AHObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHObjectMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EB2CA66235ACBAA883A148 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* AHObjectMapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHObjectMapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* AHJSONSerializer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHJSONSerializer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* AHObjectMapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHObjectMapper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* AHJSONSerializer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHJSONSerializer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65BBAC6E1EE727815F3D6CA6 /* Pods-AHObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHObjectMapper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHObjectMapper_Tests/Pods-AHObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		891F926B1ED7BABE00CC08E3 /* JSONMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMocks.swift; sourceTree = "<group>"; };
+		8922505F1ED751DE00122F63 /* AHJSONEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHJSONEncoderTests.swift; sourceTree = "<group>"; };
 		8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxTests.swift; sourceTree = "<group>"; };
 		8944134F1ECB34D000A4D54F /* DecodingOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingOperatorTests.swift; sourceTree = "<group>"; };
 		894413521ECB3D1900A4D54F /* IJSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJSONDecodableTests.swift; sourceTree = "<group>"; };
@@ -98,8 +102,8 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* AHObjectMapper_Example.app */,
-				607FACE51AFB9204008FA782 /* AHObjectMapper_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* AHJSONSerializer_Example.app */,
+				607FACE51AFB9204008FA782 /* AHJSONSerializer_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +139,11 @@
 				8923D4DC1ECC8E2700C50C13 /* MapBoxTests.swift */,
 				89FA40371ECF4AEB0005C6E4 /* StringExtensionTests.swift */,
 				89FA403B1ECF640F0005C6E4 /* AHJSONDecoderTests.swift */,
+				8922505F1ED751DE00122F63 /* AHJSONEncoderTests.swift */,
+				89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */,
 				89FA403D1ECF9B4D0005C6E4 /* OperatorMockStruct.swift */,
 				89FA40401ECFB59B0005C6E4 /* MockStructContext.swift */,
-				89B3460B1ED4925F005CDBA2 /* IJSONEncodableTests.swift */,
+				891F926B1ED7BABE00CC08E3 /* JSONMocks.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -153,7 +159,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				0FDFF8CAD2AA2610D8AA8697 /* AHObjectMapper.podspec */,
+				0FDFF8CAD2AA2610D8AA8697 /* AHJSONSerializer.podspec */,
 				29EB2CA66235ACBAA883A148 /* README.md */,
 				08F4E972F36D3137EEBE3527 /* LICENSE */,
 			);
@@ -183,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* AHObjectMapper_Example */ = {
+		607FACCF1AFB9204008FA782 /* AHJSONSerializer_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHObjectMapper_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHJSONSerializer_Example" */;
 			buildPhases = (
 				36C992CABF16426AEFF55335 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -198,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = AHObjectMapper_Example;
+			name = AHJSONSerializer_Example;
 			productName = AHObjectMapper;
-			productReference = 607FACD01AFB9204008FA782 /* AHObjectMapper_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* AHJSONSerializer_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* AHObjectMapper_Tests */ = {
+		607FACE41AFB9204008FA782 /* AHJSONSerializer_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHObjectMapper_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHJSONSerializer_Tests" */;
 			buildPhases = (
 				24CA6DF7D200905BEE3AE6CE /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -219,9 +225,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = AHObjectMapper_Tests;
+			name = AHJSONSerializer_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* AHObjectMapper_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* AHJSONSerializer_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AHObjectMapper" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AHJSONSerializer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -258,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* AHObjectMapper_Example */,
-				607FACE41AFB9204008FA782 /* AHObjectMapper_Tests */,
+				607FACCF1AFB9204008FA782 /* AHJSONSerializer_Example */,
+				607FACE41AFB9204008FA782 /* AHJSONSerializer_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -396,8 +402,10 @@
 				89FA40381ECF4AEB0005C6E4 /* StringExtensionTests.swift in Sources */,
 				8923D4DD1ECC8E2700C50C13 /* MapBoxTests.swift in Sources */,
 				894413501ECB34D000A4D54F /* DecodingOperatorTests.swift in Sources */,
+				891F926D1ED7BB5300CC08E3 /* JSONMocks.swift in Sources */,
 				89FA403F1ECF9BC40005C6E4 /* OperatorMockStruct.swift in Sources */,
 				894413531ECB3D1900A4D54F /* IJSONDecodableTests.swift in Sources */,
+				892250601ED751DE00122F63 /* AHJSONEncoderTests.swift in Sources */,
 				89B3460C1ED4925F005CDBA2 /* IJSONEncodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +415,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AHObjectMapper_Example */;
+			target = 607FACCF1AFB9204008FA782 /* AHJSONSerializer_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -564,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHObjectMapper_Example.app/AHObjectMapper_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHJSONSerializer_Example.app/AHJSONSerializer_Example";
 			};
 			name = Debug;
 		};
@@ -581,14 +589,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHObjectMapper_Example.app/AHObjectMapper_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHJSONSerializer_Example.app/AHJSONSerializer_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AHObjectMapper" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AHJSONSerializer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -597,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHObjectMapper_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHJSONSerializer_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -606,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHObjectMapper_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AHJSONSerializer_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

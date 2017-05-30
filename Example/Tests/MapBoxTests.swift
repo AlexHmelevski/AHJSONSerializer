@@ -9,7 +9,10 @@
 import XCTest
 @testable import AHObjectMapper
 
+
+
 class MapBoxTests: XCTestCase {
+
     
     func test_mapBox_return_int() {
         let value: Int = 100
@@ -74,9 +77,6 @@ class MapBoxTests: XCTestCase {
         XCTAssertEqual(1.65, newValue!)
         XCTAssertEqual(1.65, newValueO!)
     }
-    
-    
-    
     
     func test_mapBox_return_double() {
         let value: Double = 1.65
@@ -326,12 +326,10 @@ class MapBoxTests: XCTestCase {
     
     func test_dictionary_of_mappable() {
         
-        let carJson: [String: Any] = ["name": "911", "brand" : "Porche", "Engine": "V6"]
-        let json: [String: Any] = ["firstName" : "Alex", "lastName": "Alex's last name","Cars": [carJson,carJson],"Car": carJson]
-        let dict: [String: Any] = ["user1": json, "user2": json]
+        let dict: [String: Any] = ["user1": UserJSON().json, "user2": UserJSON().json]
         let data = ["data": dict]
         let dataBase: DataBase? = MapBox(obj: data).value()
-        let user: UserProfile? = MapBox(obj: json).value()
+        let user: UserProfile? = MapBox(obj: UserJSON().json).value()
         
         
         XCTAssertEqual(dataBase?.dictionary["user1"]?.lastName, "Alex's last name")
@@ -347,10 +345,8 @@ class MapBoxTests: XCTestCase {
     }
     
     func test_nested_mappable() {
-        let carJson: [String: Any] = ["name": "911", "brand" : "Porche", "Engine": "V6"]
-        let json: [String: Any] = ["firstName" : "Alex", "lastName": "Alex's last name","Cars": [carJson,carJson],"Car": carJson]
-        let user: UserProfile? = MapBox(obj: json).value()
-        
+        let user: UserProfile? = MapBox(obj: UserJSON().json).value()
+    
         XCTAssertEqual(user!.firstName, "Alex")
         XCTAssertEqual(user!.lastName, "Alex's last name")
         
@@ -359,5 +355,8 @@ class MapBoxTests: XCTestCase {
         XCTAssertEqual(user!.cars[0].engine, .V6)
         XCTAssertEqual(user!.carBrand, "Porche")
     }
+    
+    
+ 
     
 }

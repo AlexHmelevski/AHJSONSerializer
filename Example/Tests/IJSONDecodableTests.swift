@@ -14,9 +14,8 @@ class IMappableTests: XCTestCase {
     
     func test_mappable() {
         
-        let carJson: [String: Any] = ["name": "911", "brand" : "Porche", "Engine": "V6"]
-        let json: [String: Any] = ["firstName" : "Alex", "lastName": "Alex's last name","Cars": [carJson,carJson],"Car": carJson]
-        let user = User(json: json)
+       
+        let user = User(json: UserJSON().json)
         
         XCTAssertEqual(user.firstName, "Alex")
         XCTAssertEqual(user.lastName, "Alex's last name")
@@ -28,10 +27,8 @@ class IMappableTests: XCTestCase {
     }
     
     func test_optional_poperties() {
-        
-        let carJson: [String: Any] = ["name": "911", "brand" : "Porche"]
-        let json: [String: Any] = ["firstName" : "Alex", "lastName": "Alex's last name","Car": carJson]
-        let user = User(json: json)
+
+        let user = User(json: UserJSON().json)
         
         XCTAssertEqual(user.firstName, "Alex")
         XCTAssertEqual(user.lastName, "Alex's last name")

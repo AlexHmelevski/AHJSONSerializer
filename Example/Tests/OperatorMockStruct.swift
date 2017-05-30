@@ -9,7 +9,7 @@
 import Foundation
 @testable import AHObjectMapper
 
-struct User: IJSONDecodable, IJSONEncodable {
+struct User: JSONDecodable, JSONEncodable {
     private(set) var firstName: String = ""
     private(set) var lastName: String = ""
     private(set) var car: Car?
@@ -32,7 +32,7 @@ struct User: IJSONDecodable, IJSONEncodable {
     }
 }
 
-struct Car: IJSONDecodable {
+struct Car: JSONDecodable {
     private(set) var carName: String = ""
     private(set) var carBrand: String = ""
     private(set) var engine: Engine = .noEngine

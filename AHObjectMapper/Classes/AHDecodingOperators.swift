@@ -128,56 +128,56 @@ public func <~ <T: RawRepresentable>(property: inout [T]!, map: AHJSONDecoder) {
 }
 
 
-// ========= IJSONDecodable operators  =========
+// ========= JSONDecodable operators  =========
 
-public func <~ <T: IJSONDecodable>(property: inout T, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout T, map: AHJSONDecoder) {
     if let value: T = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout T?, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout T?, map: AHJSONDecoder) {
     property = map.value()
 }
 
-public func <~ <T: IJSONDecodable>(property: inout T!, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout T!, map: AHJSONDecoder) {
     if let value: T = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout [T], map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [T], map: AHJSONDecoder) {
     if let value: [T] = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout [T]?, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [T]?, map: AHJSONDecoder) {
     if let value: [T] = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout [T]!, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [T]!, map: AHJSONDecoder) {
     if let value: [T] = map.value() {
         property = value
     }
 }
 
 
-public func <~ <T: IJSONDecodable>(property: inout [String: T], map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [String: T], map: AHJSONDecoder) {
     if let value: [String: T] = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout [String: T]?, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [String: T]?, map: AHJSONDecoder) {
     if let value: [String: T] = map.value() {
         property = value
     }
 }
 
-public func <~ <T: IJSONDecodable>(property: inout [String: T]!, map: AHJSONDecoder) {
+public func <~ <T: JSONDecodable>(property: inout [String: T]!, map: AHJSONDecoder) {
     if let value: [String: T] = map.value() {
         property = value
     }

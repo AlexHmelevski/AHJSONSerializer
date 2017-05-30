@@ -10,7 +10,7 @@ import Foundation
 
 @testable import AHObjectMapper
 
-struct DataBase: IJSONDecodable {
+struct DataBase: JSONDecodable {
     let dictionary: [String: UserProfile]
     
     init(decoder: AHJSONDecoder) {
@@ -18,7 +18,7 @@ struct DataBase: IJSONDecodable {
     }
 }
 
-struct UserProfile: IJSONDecodable,IJSONEncodable {
+struct UserProfile: JSONDecodable,JSONEncodable {
     let firstName: String
     let lastName: String
     let car: CarProfile?
@@ -42,7 +42,7 @@ struct UserProfile: IJSONDecodable,IJSONEncodable {
     }
 }
 
-struct CarProfile: IJSONDecodable,IJSONEncodable {
+struct CarProfile: JSONDecodable,JSONEncodable {
     let name: String
     let brand: String
     let engine: EngineType
