@@ -159,11 +159,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		17084EA48BDF6B1A1956EFE2E95A5304 /* AHObjectMapper */ = {
+		17084EA48BDF6B1A1956EFE2E95A5304 /* AHJSONSerializer */ = {
 			isa = PBXGroup;
 			children = (
 				87E957095C3B2F1B760D1878B88B2F13 /* Classes */,
 			);
+			name = AHJSONSerializer;
 			path = AHObjectMapper;
 			sourceTree = "<group>";
 		};
@@ -252,13 +253,13 @@
 			path = "Example/Pods/Target Support Files/AHObjectMapper";
 			sourceTree = "<group>";
 		};
-		B698DBAE37FBF46CE872647B8154B8DF /* AHObjectMapper */ = {
+		B698DBAE37FBF46CE872647B8154B8DF /* AHJSONSerializer */ = {
 			isa = PBXGroup;
 			children = (
-				17084EA48BDF6B1A1956EFE2E95A5304 /* AHObjectMapper */,
+				17084EA48BDF6B1A1956EFE2E95A5304 /* AHJSONSerializer */,
 				A7FEF054BE3F1CD5ED2F8312B62AC9BD /* Support Files */,
 			);
-			name = AHObjectMapper;
+			name = AHJSONSerializer;
 			path = ../..;
 			sourceTree = "<group>";
 		};
@@ -321,7 +322,7 @@
 		F3E2217AFD2834861E15D40943CBEDA9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B698DBAE37FBF46CE872647B8154B8DF /* AHObjectMapper */,
+				B698DBAE37FBF46CE872647B8154B8DF /* AHJSONSerializer */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
