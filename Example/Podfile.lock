@@ -1,5 +1,5 @@
 PODS:
-  - AHJSONSerializer (0.1.0):
+  - AHJSONSerializer (0.1.1):
     - ALEither
   - ALEither (0.1.4)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AHJSONSerializer: 09de0cc664b76d5b17e0c821ecead27c1b259373
+  AHJSONSerializer: 69a38891fae56486d954549daa3e6070f1d999aa
   ALEither: 790e8f1dda897bfcb56e547e5db86c4eb25da87b
 
 PODFILE CHECKSUM: dd0baab5068dfb090806e2b3d8cf772bfb127910
